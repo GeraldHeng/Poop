@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reach_toilet"
+        android:id="@+id/tvRateTheToilet"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reach_toilet_sentence"
+        android:layout_below="@id/tvRateTheToilet"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/caption"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caption"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rgThumbs"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbThumbUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/thumbs_up"
+            android:button="@drawable/thumbs_up_radio_button" />
+
+        <RadioButton
+            android:id="@+id/rbThumbDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thumbs_down"
+            android:button="@drawable/thumbs_down_radio_button" />
+    </RadioGroup>
+
+
+</RelativeLayout>

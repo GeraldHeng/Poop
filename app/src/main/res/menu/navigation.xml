@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/find_toliet"
+        android:icon="@drawable/ic_search"
+        android:title="@string/find_toliet" />
+
+    <item
+        android:id="@+id/add_toliet"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add_toliet" />
+</menu>

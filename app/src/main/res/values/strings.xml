@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Poop</string>
+    <string name="find_toliet">Find Toliet</string>
+    <string name="add_toliet">Add Toliet</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="address">Address</string>
+    <string name="rating">Rating</string>
+    <string name="add_new_toilet_sentence">Hey we will be happy that you can add another toliet for us to contribute to your other poop buddies.</string>
+    <string name="add_new_toilet">Add New Toilet For Us...</string>
+    <string name="rate_toilet">Rate The Toilet</string>
+    <string name="reach_toilet">Congrats you have reach the toilet!</string>
+    <string name="reach_toilet_sentence">Please do give the toilet a thumbs up or down to let fellow poopers know!</string>
+    <string name="toilet_details">Toilet Details</string>
+    <string name="description">Description</string>
+    <string name="mock_title">Near Cotton On At the corner</string>
+    <string name="mock_address">Jem,Jurong East, Singapore</string>
+    <string name="mock_dest">This is located at level 5 of jem near cotton on</string>
+    <string name="mock_rating">4/5</string>
+    <string name="mock_distance">768 Meters Away</string>
+    <string name="done">Done</string>
+    <string name="reached">Reached</string>
+    <string name="thumbs_up">Thumbs Up</string>
+    <string name="thumbs_down">Thumbs Down</string>
+</resources>

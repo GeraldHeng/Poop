@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindToiletFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+
+    <ImageView
+        android:id="@+id/ivGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_gps"
+        android:layout_alignRight="@+id/map"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ivList"/>
+
+    <ImageView
+        android:id="@+id/ivList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_list"
+        android:layout_alignRight="@id/map"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/closetToiletRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_above="@id/botNav"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/green_border"
+        android:elevation="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvClosestToilet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Closest Toilet"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvClosestToilet"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="Jurong East Level 5 Near Cotton On"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="10dp"
+            android:text="783 Meters Away"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listFrameLayout"
+        android:elevation="10dp">
+    </FrameLayout>
+</RelativeLayout>
